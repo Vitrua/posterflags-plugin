@@ -1,15 +1,6 @@
-/home/giacomo/projects/posterflags-plugin/bin/Debug/net8.0/Jellyfin.Plugin.PosterFlags.deps.json
-/home/giacomo/projects/posterflags-plugin/bin/Debug/net8.0/Jellyfin.Plugin.PosterFlags.dll
-/home/giacomo/projects/posterflags-plugin/bin/Debug/net8.0/Jellyfin.Plugin.PosterFlags.pdb
-/home/giacomo/projects/posterflags-plugin/bin/Debug/net8.0/Jellyfin.Plugin.PosterFlags.xml
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.csproj.AssemblyReference.cache
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.GeneratedMSBuildEditorConfig.editorconfig
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.AssemblyInfoInputs.cache
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.AssemblyInfo.cs
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.csproj.CoreCompileInputs.cache
 /home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.sourcelink.json
-/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.dll
-/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/refint/Jellyfin.Plugin.PosterFlags.dll
-/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.xml
-/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlags.pdb
-/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/ref/Jellyfin.Plugin.PosterFlags.dll

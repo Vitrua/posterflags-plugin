@@ -47,10 +47,18 @@
               "target": "Package",
               "version": "[10.9.11, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "SerilogAnalyzer": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[0.15.0, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.6, )"
             },
             "SmartAnalyzers.MultithreadingAnalyzer": {
               "suppressParent": "All",

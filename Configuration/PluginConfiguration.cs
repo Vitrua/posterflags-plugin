@@ -5,26 +5,9 @@
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 //------------------------------------------------------------------------------
 
-
 namespace Jellyfin.Plugin.PosterFlags.Configuration
 {
     using MediaBrowser.Model.Plugins;
-
-    /// <summary>
-    /// The configuration options.
-    /// </summary>
-    public enum SomeOptions
-    {
-        /// <summary>
-        /// Option one.
-        /// </summary>
-        OneOption,
-
-        /// <summary>
-        /// Second option.
-        /// </summary>
-        AnotherOption,
-    }
 
     /// <summary>
     /// Plugin configuration.
@@ -36,31 +19,13 @@ namespace Jellyfin.Plugin.PosterFlags.Configuration
         /// </summary>
         public PluginConfiguration()
         {
-            // Set default options here.
-            this.Options = SomeOptions.AnotherOption;
-            this.TrueFalseSetting = true;
-            this.AnInteger = 2;
-            this.AString = "string";
+            // Default settings
+            EnableFlagOverlay = true;
         }
 
         /// <summary>
-        /// Gets or sets a value indicating whether some true or false setting is enabled.
+        /// Gets or sets a value indicating whether the flag overlay feature is enabled.
         /// </summary>
-        public bool TrueFalseSetting { get; set; }
-
-        /// <summary>
-        /// Gets or sets an integer setting.
-        /// </summary>
-        public int AnInteger { get; set; }
-
-        /// <summary>
-        /// Gets or sets a string setting.
-        /// </summary>
-        public string AString { get; set; }
-
-        /// <summary>
-        /// Gets or sets an enum option.
-        /// </summary>
-        public SomeOptions Options { get; set; }
+        public bool EnableFlagOverlay { get; set; }
     }
 }

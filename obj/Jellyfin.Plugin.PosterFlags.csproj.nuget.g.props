@@ -12,6 +12,9 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/giacomo/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)sixlabors.imagesharp/3.1.6/build/SixLabors.ImageSharp.props" Condition="Exists('$(NuGetPackageRoot)sixlabors.imagesharp/3.1.6/build/SixLabors.ImageSharp.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">/home/giacomo/.nuget/packages/stylecop.analyzers.unstable/1.2.0.556</PkgStyleCop_Analyzers_Unstable>
     <PkgSmartAnalyzers_MultithreadingAnalyzer Condition=" '$(PkgSmartAnalyzers_MultithreadingAnalyzer)' == '' ">/home/giacomo/.nuget/packages/smartanalyzers.multithreadinganalyzer/1.1.31</PkgSmartAnalyzers_MultithreadingAnalyzer>
