@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jellyfin.Plugin.PosterFlags</name>
+    </assembly>
+    <members>
+        <member name="T:Jellyfin.Plugin.PosterFlags.Configuration.SomeOptions">
+            <summary>
+            The configuration options.
+            </summary>
+        </member>
+        <member name="F:Jellyfin.Plugin.PosterFlags.Configuration.SomeOptions.OneOption">
+            <summary>
+            Option one.
+            </summary>
+        </member>
+        <member name="F:Jellyfin.Plugin.PosterFlags.Configuration.SomeOptions.AnotherOption">
+            <summary>
+            Second option.
+            </summary>
+        </member>
+        <member name="T:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration">
+            <summary>
+            Plugin configuration.
+            </summary>
+        </member>
+        <member name="M:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration"/> class.
+            </summary>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration.TrueFalseSetting">
+            <summary>
+            Gets or sets a value indicating whether some true or false setting is enabled.
+            </summary>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration.AnInteger">
+            <summary>
+            Gets or sets an integer setting.
+            </summary>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration.AString">
+            <summary>
+            Gets or sets a string setting.
+            </summary>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.Configuration.PluginConfiguration.Options">
+            <summary>
+            Gets or sets an enum option.
+            </summary>
+        </member>
+        <member name="T:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin">
+            <summary>
+            The main plugin class.
+            </summary>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin.Instance">
+            <summary>
+            Gets the current plugin instance.
+            </summary>
+        </member>
+        <member name="M:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin.#ctor(MediaBrowser.Common.Configuration.IApplicationPaths,MediaBrowser.Model.Serialization.IXmlSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin"/> class.
+            </summary>
+            <param name="applicationPaths">Instance of the <see cref="T:MediaBrowser.Common.Configuration.IApplicationPaths"/> interface.</param>
+            <param name="xmlSerializer">Instance of the <see cref="T:MediaBrowser.Model.Serialization.IXmlSerializer"/> interface.</param>
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin.Id">
+            <inheritdoc />
+        </member>
+        <member name="M:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin.GetPages">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

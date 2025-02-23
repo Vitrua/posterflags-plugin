@@ -1,0 +1,6 @@
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.csproj.AssemblyReference.cache
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.GeneratedMSBuildEditorConfig.editorconfig
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.AssemblyInfoInputs.cache
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.AssemblyInfo.cs
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.csproj.CoreCompileInputs.cache
+/home/giacomo/projects/posterflags-plugin/obj/Debug/net8.0/Jellyfin.Plugin.PosterFlagsPlugin.sourcelink.json
