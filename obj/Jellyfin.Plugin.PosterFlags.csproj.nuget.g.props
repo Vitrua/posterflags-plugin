@@ -16,5 +16,6 @@
     <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">/home/giacomo/.nuget/packages/stylecop.analyzers.unstable/1.2.0.556</PkgStyleCop_Analyzers_Unstable>
     <PkgSmartAnalyzers_MultithreadingAnalyzer Condition=" '$(PkgSmartAnalyzers_MultithreadingAnalyzer)' == '' ">/home/giacomo/.nuget/packages/smartanalyzers.multithreadinganalyzer/1.1.31</PkgSmartAnalyzers_MultithreadingAnalyzer>
     <PkgSerilogAnalyzer Condition=" '$(PkgSerilogAnalyzer)' == '' ">/home/giacomo/.nuget/packages/seriloganalyzer/0.15.0</PkgSerilogAnalyzer>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/giacomo/.nuget/packages/newtonsoft.json/9.0.1</PkgNewtonsoft_Json>
   </PropertyGroup>
 </Project>

@@ -37,6 +37,15 @@
                             <span>Save</span>
                         </button>
                     </div>
+                    <div>
+                        <button id="ScanLibraryButton" is="emby-button" class="raised emby-button">
+                            <span>Scan Library</span>
+                        </button>
+                    </div>
+                    <div id="ScanResults">
+                        <h3>Scanned Titles</h3>
+                        <ul id="ScannedTitlesList"></ul>
+                    </div>
                 </form>
             </div>
         </div>
@@ -72,6 +81,26 @@
 
                 e.preventDefault();
                 return false;
+            });
+        </script>
+        <script type="text/javascript">
+            document.querySelector("#ScanLibraryButton").addEventListener("click", function () {
+                Dashboard.showLoadingMsg();
+                ApiClient.getJSON(ApiClient.getUrl("PosterFlags/ScanLibrary"))
+                    .then(function (response) {
+                        Dashboard.hideLoadingMsg();
+                        var listElement = document.querySelector("#ScannedTitlesList");
+                        listElement.innerHTML = "";
+                        response.forEach(function (title) {
+                            var listItem = document.createElement("li");
+                            listItem.textContent = title;
+                            listElement.appendChild(listItem);
+                        });
+                    })
+                    .catch(function () {
+                        Dashboard.hideLoadingMsg();
+                        alert("Error scanning the library.");
+                    });
             });
         </script>
     </div>

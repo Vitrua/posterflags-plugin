@@ -49,6 +49,22 @@
             Gets or sets an enum option.
             </summary>
         </member>
+        <member name="T:Jellyfin.Plugin.PosterFlags.Controllers.LibraryScanController">
+            <summary>
+            API Controller to handle scanning movies and TV shows.
+            </summary>
+        </member>
+        <member name="M:Jellyfin.Plugin.PosterFlags.Controllers.LibraryScanController.#ctor(MediaBrowser.Controller.Library.ILibraryManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jellyfin.Plugin.PosterFlags.Controllers.LibraryScanController"/> class.
+            </summary>
+        </member>
+        <member name="M:Jellyfin.Plugin.PosterFlags.Controllers.LibraryScanController.ScanLibrary">
+            <summary>
+            Scans the library for movies and TV show episodes and returns their titles.
+            </summary>
+            <returns>A list of titles.</returns>
+        </member>
         <member name="T:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin">
             <summary>
             The main plugin class.

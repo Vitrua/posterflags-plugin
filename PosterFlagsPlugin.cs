@@ -14,6 +14,7 @@ using MediaBrowser.Common.Configuration;
 using MediaBrowser.Common.Plugins;
 using MediaBrowser.Model.Plugins;
 using MediaBrowser.Model.Serialization;
+using Jellyfin.Plugin.PosterFlags.Controllers;
 
 namespace Jellyfin.Plugin.PosterFlags
 {
@@ -52,10 +53,7 @@ namespace Jellyfin.Plugin.PosterFlags
                 new PluginPageInfo
                 {
                     Name = this.Name,
-                    EmbeddedResourcePath = string.Format(
-                        CultureInfo.InvariantCulture,
-                        "{0}.Configuration.configPage.html",
-                        this.GetType().Namespace)
+                    EmbeddedResourcePath = $"{this.GetType().Namespace}.Configuration.configPage.html"
                 }
             };
         }
