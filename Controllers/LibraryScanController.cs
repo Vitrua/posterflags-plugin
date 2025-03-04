@@ -9,13 +9,15 @@
 
 namespace Jellyfin.Plugin.PosterFlags.Controllers
 {
-
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using MediaBrowser.Controller.Entities;
     using MediaBrowser.Controller.Library;
+    using MediaBrowser.Model.Entities;
+    using MediaBrowser.Model.IO;
+    using MediaBrowser.Model.Querying;
     using Microsoft.AspNetCore.Mvc;
     using Jellyfin.Data.Enums;
 
@@ -38,31 +40,47 @@ namespace Jellyfin.Plugin.PosterFlags.Controllers
         }
 
         /// <summary>
-        /// Scans the library for movies and TV show episodes and returns their titles.
+        /// Scans the library for movies and TV show episodes and returns their titles along with audio track names.
         /// </summary>
-        /// <returns>A list of titles.</returns>
+        /// <returns>A list of titles and their audio tracks.</returns>
         [HttpGet]
         public ActionResult<List<string>> ScanLibrary()
         {
-            var titles = new List<string>();
-
+            var results = new List<string>();
 
             var items = libraryManager.GetItemList(new InternalItemsQuery
             {
                 IncludeItemTypes = new[] { BaseItemKind.Movie, BaseItemKind.Episode },
             });
 
-
             foreach (var item in items)
             {
                 // Add returns false if already in set
                 if (this.scannedItems.Add(item.Id.ToString())) 
                 {
-                    titles.Add(item.Name);
+                    var title = item.Name;
+                    var audioTracks = new List<string>();
+
+                    // Get media sources (files)
+                    var mediaSources = item.GetMediaSources(false);
+
+                    foreach (var mediaSource in mediaSources)
+                    {
+                        foreach (var stream in mediaSource.MediaStreams)
+                        {
+                            if (stream.Type == MediaStreamType.Audio)
+                            {
+                                audioTracks.Add(stream.DisplayTitle ?? "Unknown Audio Track");
+                            }
+                        }
+                    }
+
+                    var audioInfo = audioTracks.Any() ? string.Join(", ", audioTracks) : "No Audio Tracks Found";
+                    results.Add($"{title} - Audio Tracks: {audioInfo}");
                 }
             }
 
-            return Ok(titles);
+            return Ok(results);
         }
     }
 }

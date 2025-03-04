@@ -61,9 +61,9 @@
         </member>
         <member name="M:Jellyfin.Plugin.PosterFlags.Controllers.LibraryScanController.ScanLibrary">
             <summary>
-            Scans the library for movies and TV show episodes and returns their titles.
+            Scans the library for movies and TV show episodes and returns their titles along with audio track names.
             </summary>
-            <returns>A list of titles.</returns>
+            <returns>A list of titles and their audio tracks.</returns>
         </member>
         <member name="T:Jellyfin.Plugin.PosterFlags.PosterFlagsPlugin">
             <summary>

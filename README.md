@@ -12,6 +12,7 @@ From the root folder of this project, run the following commands:
 
 ```sh
 dotnet clean
+dotnet restore
 dotnet build
 dotnet build --configuration Release
 ```
